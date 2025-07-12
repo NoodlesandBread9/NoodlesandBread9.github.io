@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nadia Alexandra | Marketing & International Law</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles & Tailwind Configuration -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111827; /* Dark Slate */
+            color: #d1d5db; /* Gray 300 */
+        }
+        html {
+            scroll-padding-top: 5rem;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-glow {
+            border: 1px solid #1e3a8a; /* Darker Blue */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-glow:hover {
+            border-color: #60a5fa; /* Lighter Blue */
+            box-shadow: 0 0 20px rgba(96, 165, 250, 0.2);
+        }
+        
+        /* Aurora Background Animation */
+        @keyframes aurora {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .aurora-bg {
+            background: radial-gradient(ellipse at top, transparent 40%, #1e3a8a),
+                        radial-gradient(ellipse at bottom, transparent 40%, #1e40af);
+            background-size: 200% 200%;
+            animation: aurora 15s ease infinite;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#3b82f6',   // Professional Blue
+                        'secondary': '#f59e0b', // Warm Gold for accents
+                        'dark-bg': '#111827',   // Dark Slate
+                        'card-bg': '#1f2937',   // Darker Slate
+                        'light-text': '#d1d5db', // Gray 300
+                        'heading-text': '#f9fafb', // Gray 50
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="text-light-text">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-dark-bg/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 border-b border-gray-700">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Nadia Alexandra</a>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#skills" class="hover:text-primary transition-colors duration-300">Skills</a>
+                <a href="#education" class="hover:text-primary transition-colors duration-300">Education</a>
+                <a href="#contact" class="hover:text-primary transition-colors duration-300">Contact</a>
+                <a href="Nadia Alexandra Resume 2025.docx" download class="bg-secondary text-white font-semibold px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-300 shadow-lg shadow-secondary/20 transform hover:scale-105">Download CV</a>
+            </nav>
+            
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-light-text hover:bg-card-bg focus:outline-none focus:ring-2 focus:ring-primary">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-card-bg border-t border-gray-700">
+            <a href="#skills" class="block px-6 py-3 hover:bg-dark-bg hover:text-primary">Skills</a>
+            <a href="#education" class="block px-6 py-3 hover:bg-dark-bg hover:text-primary">Education</a>
+            <a href="#contact" class="block px-6 py-3 hover:bg-dark-bg hover:text-primary">Contact</a>
+            <a href="Nadia Alexandra Resume 2025.docx" download class="block px-6 py-3 bg-secondary text-white text-center font-semibold hover:bg-opacity-90">Download CV</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative overflow-hidden pt-32 pb-20 lg:pt-48 lg:pb-28">
+            <div class="absolute inset-0 aurora-bg opacity-20"></div>
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-heading-text leading-tight mb-4">
+                    Nadia Alexandra
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold gradient-text mb-8">
+                    Bilingual Marketing Specialist & Law Student
+                </h2>
+                <p class="text-lg md:text-xl text-light-text max-w-3xl mx-auto mb-8">
+                    👋 I am an English/Spanish demand generation specialist helping organizations effectively connect with their target audiences. With 10+ years of combined experience supporting startups, non-profits, and tech giant HubSpot, I bring specialized knowledge to the table. I am skilled in chat-based marketing, AI-assisted sales, user experience design, and digital project management. My zest for tech, commerce, and international relations propelled me into law school with a focus on international law.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-transform duration-300 transform hover:scale-105 shadow-lg shadow-primary/40">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-card-bg">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-heading-text">Skills & Proficiencies</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-center">
+                    <div class="card-glow bg-dark-bg p-4 rounded-lg flex flex-col items-center justify-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M18 11a5 5 0 010 2" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20 9a9 9 0 010 6" />
+                        </svg>
+                        <p>Advanced Spanish</p>
+                    </div>
+                    <div class="card-glow bg-dark-bg p-4 rounded-lg flex flex-col items-center justify-center gap-2">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+                        <p>AI Chatbots</p>
+                    </div>
+                    <div class="card-glow bg-dark-bg p-4 rounded-lg flex flex-col items-center justify-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                        <p>Demand Generation</p>
+                    </div>
+                    <div class="card-glow bg-dark-bg p-4 rounded-lg flex flex-col items-center justify-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                        <p>HubSpot CRM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-heading-text">Education</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="card-glow bg-card-bg p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-bold text-primary">The University of Toledo College of Law</h3>
+                        <p class="font-semibold text-light-text">J.D. Candidate</p>
+                        <p class="mt-2 text-secondary font-semibold">Leadership Scholar Honors</p>
+                    </div>
+                    <div class="card-glow bg-card-bg p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-bold text-primary">Western Carolina University</h3>
+                        <p class="font-semibold text-light-text">B.S. Emergency Management</p>
+                        <p class="mt-2 text-secondary font-semibold">Summa Cum Laude</p>
+                    </div>
+                    <div class="card-glow bg-card-bg p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl font-bold text-primary">Oakton College</h3>
+                        <p class="font-semibold text-light-text">A.A. Global Studies</p>
+                        <p class="mt-2 text-secondary font-semibold">Phi Theta Kappa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-card-bg">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-heading-text">Let's Talk</h2>
+                <p class="text-light-text mt-2 max-w-xl mx-auto">I'm happy to discuss projects, ideas, and opportunities. The best way to reach me is through LinkedIn.</p>
+                <div class="mt-8">
+                     <a href="https://www.linkedin.com/in/nadia411" target="_blank" rel="noopener noreferrer" class="bg-secondary text-white px-8 py-4 rounded-lg font-semibold text-xl hover:bg-opacity-90 transition-transform duration-300 transform hover:scale-105 shadow-lg shadow-secondary/30 inline-block">
+                        Message Me on LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-bg text-light-text border-t border-zinc-800">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <a href="https://www.linkedin.com/in/nadia411" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">LinkedIn</a>
+            <p class="mt-4">&copy; 2025 Nadia Alexandra. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('hidden');
+        };
+
+        mobileMenuButton.addEventListener('click', toggleMenu);
+
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
